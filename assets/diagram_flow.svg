@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380">
+  <defs>
+    <linearGradient id="dbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12152a"/>
+      <stop offset="100%" stop-color="#0d0f1a"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 2 L 9 5 L 0 8 z" fill="#2a3a7a"/>
+    </marker>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 2 L 9 5 L 0 8 z" fill="#00e5ff"/>
+    </marker>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="720" height="380" rx="12" fill="url(#dbg)" stroke="#2a2f5a" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="360" y="30" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#00e5ff" text-anchor="middle" font-weight="bold" filter="url(#glow)">◈  ALUR KERJA APK PREMIUM ANALYZER  ◈</text>
+  <rect x="100" y="36" width="520" height="1" rx="0.5" fill="#2a2f5a"/>
+
+  <!-- Step 1: APK Input -->
+  <rect x="280" y="52" width="160" height="44" rx="8" fill="#0d1a3a" stroke="#4488ff" stroke-width="1.5"/>
+  <text x="360" y="71" font-family="'SF Mono', 'Fira Code', monospace" font-size="10" fill="#4488ff" text-anchor="middle" font-weight="bold">📱  TARGET APK</text>
+  <text x="360" y="86" font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#6070a0" text-anchor="middle">app.apk (pilih / path manual)</text>
+
+  <!-- Arrow down -->
+  <line x1="360" y1="96" x2="360" y2="118" stroke="#2a3a7a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2: Decompile -->
+  <rect x="240" y="120" width="240" height="44" rx="8" fill="#0d1a2a" stroke="#00e5ff" stroke-width="1.5"/>
+  <text x="360" y="139" font-family="'SF Mono', 'Fira Code', monospace" font-size="10" fill="#00e5ff" text-anchor="middle" font-weight="bold">⚙  DECOMPILE</text>
+  <text x="360" y="154" font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#6070a0" text-anchor="middle">apktool → smali + res  │  jadx → Java</text>
+
+  <!-- Arrow splits into 3 -->
+  <line x1="360" y1="164" x2="360" y2="182" stroke="#2a3a7a" stroke-width="2"/>
+  <line x1="360" y1="182" x2="150" y2="182" stroke="#2a3a7a" stroke-width="1.5"/>
+  <line x1="360" y1="182" x2="360" y2="182" stroke="#2a3a7a" stroke-width="1.5"/>
+  <line x1="360" y1="182" x2="570" y2="182" stroke="#2a3a7a" stroke-width="1.5"/>
+
+  <!-- Arrow to left block -->
+  <line x1="150" y1="182" x2="150" y2="200" stroke="#2a3a7a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Arrow to center block -->
+  <line x1="360" y1="182" x2="360" y2="200" stroke="#2a3a7a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Arrow to right block -->
+  <line x1="570" y1="182" x2="570" y2="200" stroke="#2a3a7a" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Analysis blocks row -->
+  <!-- Left: Scan Modules -->
+  <rect x="60" y="202" width="178" height="64" rx="8" fill="#0d1a1a" stroke="#00ff9f" stroke-width="1.5"/>
+  <text x="149" y="220" font-family="'SF Mono', 'Fira Code', monospace" font-size="9.5" fill="#00ff9f" text-anchor="middle" font-weight="bold">🔍  SCAN MODULES</text>
+  <text x="149" y="235" font-family="'SF Mono', 'Fira Code', monospace" font-size="8.5" fill="#6070a0" text-anchor="middle">Premium Flags</text>
+  <text x="149" y="248" font-family="'SF Mono', 'Fira Code', monospace" font-size="8.5" fill="#6070a0" text-anchor="middle">License · Billing</text>
+  <text x="149" y="261" font-family="'SF Mono', 'Fira Code', monospace" font-size="8.5" fill="#6070a0" text-anchor="middle">Security · Obfuscation</text>
+
+  <!-- Center: Method Analyzer -->
+  <rect x="270" y="202" width="178" height="64" rx="8" fill="#1a0d1a" stroke="#ff6ec7" stroke-width="1.5"/>
+  <text x="359" y="220" font-family="'SF Mono', 'Fira Code', monospace" font-size="9.5" fill="#ff6ec7" text-anchor="middle" font-weight="bold">🎯  METHOD ANALYZER</text>
+  <text x="359" y="235" font-family="'SF Mono', 'Fira Code', monospace" font-size="8.5" fill="#6070a0" text-anchor="middle">30+ premium patterns</text>
+  <text x="359" y="248" font-family="'SF Mono', 'Fira Code', monospace" font-size="8.5" fill="#6070a0" text-anchor="middle">Return type detection</text>
+  <text x="359" y="261" font-family="'SF Mono', 'Fira Code', monospace" font-size="8.5" fill="#6070a0" text-anchor="middle">Fix code generator</text>
+
+  <!-- Right: Manifest -->
+  <rect x="480" y="202" width="178" height="64" rx="8" fill="#1a1a0d" stroke="#ffdd57" stroke-width="1.5"/>
+  <text x="569" y="220" font-family="'SF Mono', 'Fira Code', monospace" font-size="9.5" fill="#ffdd57" text-anchor="middle" font-weight="bold">📄  MANIFEST + RES</text>
+  <text x="569" y="235" font-family="'SF Mono', 'Fira Code', monospace" font-size="8.5" fill="#6070a0" text-anchor="middle">AndroidManifest.xml</text>
+  <text x="569" y="248" font-family="'SF Mono', 'Fira Code', monospace" font-size="8.5" fill="#6070a0" text-anchor="middle">Permissions · SKU IDs</text>
+  <text x="569" y="261" font-family="'SF Mono', 'Fira Code', monospace" font-size="8.5" fill="#6070a0" text-anchor="middle">Resource strings</text>
+
+  <!-- Merge arrows -->
+  <line x1="149" y1="266" x2="149" y2="286" stroke="#2a3a7a" stroke-width="1.5"/>
+  <line x1="359" y1="266" x2="359" y2="286" stroke="#2a3a7a" stroke-width="1.5"/>
+  <line x1="569" y1="266" x2="569" y2="286" stroke="#2a3a7a" stroke-width="1.5"/>
+  <line x1="149" y1="286" x2="569" y2="286" stroke="#2a3a7a" stroke-width="1.5"/>
+  <line x1="360" y1="286" x2="360" y2="300" stroke="#2a3a7a" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Output row -->
+  <!-- Bypass Guide -->
+  <rect x="60" y="302" width="160" height="44" rx="8" fill="#0d1a0d" stroke="#00ff9f" stroke-width="1.2"/>
+  <text x="140" y="320" font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#00ff9f" text-anchor="middle" font-weight="bold">🔓  BYPASS GUIDE</text>
+  <text x="140" y="334" font-family="'SF Mono', 'Fira Code', monospace" font-size="8" fill="#6070a0" text-anchor="middle">bypass_guide.txt</text>
+
+  <!-- HTML Report -->
+  <rect x="280" y="302" width="160" height="44" rx="8" fill="#0d0d1a" stroke="#7c6aff" stroke-width="1.5"/>
+  <text x="360" y="320" font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#7c6aff" text-anchor="middle" font-weight="bold">📊  HTML REPORT</text>
+  <text x="360" y="334" font-family="'SF Mono', 'Fira Code', monospace" font-size="8" fill="#6070a0" text-anchor="middle">report.html (dark theme)</text>
+
+  <!-- Patched APK -->
+  <rect x="500" y="302" width="160" height="44" rx="8" fill="#1a0d0d" stroke="#ff4d6d" stroke-width="1.2"/>
+  <text x="580" y="320" font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#ff4d6d" text-anchor="middle" font-weight="bold">🔧  PATCHED APK</text>
+  <text x="580" y="334" font-family="'SF Mono', 'Fira Code', monospace" font-size="8" fill="#6070a0" text-anchor="middle">signed_patched.apk</text>
+
+  <!-- Side arrows from center to outputs -->
+  <line x1="280" y1="324" x2="220" y2="324" stroke="#00e5ff" stroke-width="1.2" marker-end="url(#arrow2)"/>
+  <line x1="440" y1="324" x2="500" y2="324" stroke="#00e5ff" stroke-width="1.2" marker-end="url(#arrow2)"/>
+
+  <!-- Footer label -->
+  <text x="360" y="370" font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#2a3a5a" text-anchor="middle">APK Premium Analyzer v1.0 — naveluzia</text>
+</svg>
